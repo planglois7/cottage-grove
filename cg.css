@@ -1,0 +1,60 @@
+body{
+	margin:0px;
+}
+#menu{
+	
+  border-right:solid;
+  border-width:1px;
+  text-align:center;
+  padding-top:10%;
+  float:left;
+  width:100%;
+}
+#main{
+
+  text-align:center;
+  float:right;
+  width:70%;
+  
+}
+
+.wrapper {
+	width:100%;
+  
+}
+p{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:20px;
+}
+video{
+
+    width: 100%;
+}
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+}
