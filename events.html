@@ -1,0 +1,110 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+	<style type="text/css">
+	.main{
+		/*background-image: url('horse.jpg');*/
+		/*width: 1000px; height:1000px;*/
+	}
+	body{
+	margin:0px;
+}
+#menu{
+	grid-column: 1;
+  grid-row: 1/8;
+  border-right:solid;
+  border-width:1px;
+  text-align:center;
+  padding-top:10%;
+/*background-color:rgb(251,252,221);*/
+}
+#main{
+	grid-column: 2 / 4;
+  grid-row: 1;
+  /*margin:10%;*/
+  margin-top:10%;
+  text-align:center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  /*background-image: url('file:///Users/Rick/Documents/cottage%20grove/horse.jpg');*/
+}
+img{
+	width:50%;
+	padding:0px;
+}
+p{
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:20px;
+}
+h1{
+	font-family: 'Alegreya Sans', sans-serif;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover {
+	text-decoration: underline;
+}
+table, th, td {
+    border: 1px solid black;
+    /*border-collapse: collapse;*/
+    font-family: 'Alegreya Sans', sans-serif;
+   padding:1%;
+}
+td{
+	padding:10px;
+}
+table{
+width:100%;
+}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div id="menu">
+	<a href="index.html"><img src="AHACarouselLogo-02.png"></img></a>
+	<a href="story.html"><p> Our Story </p></a>
+	<a href="progress.html"><p> Progress </p></a>
+	<a href="contact.html"><p> Contact </p></a>
+	<a href="events.html"><p> Events </p></a>
+	<a href="merch.html"><p> Merchandise </p></a><br>
+	<a href="#"><p style="font-size:25px"> Donate </p></a>
+	
+	</div>
+	<div class="main" id="main">
+	<h1>Upcoming Events!</h1>
+	<table>
+	<tr>
+		<th style="background-color:rgb(107,79,139)">June 24- Cottage Grove Carnival</th>
+		<th style="background-color:rgb(250,173,81)">July 29th- Carousel Color Run</th>
+		<th style="background-color:rgb(50,170,220)">July 8th- Sip and Paint</th>
+		<th style="background-color:rgb(56,178,115)">July 4th- USA Merchandise</th>
+
+	</tr>
+		
+	<tr>
+		<td>Come one, come all to our Carousel Kickoff Event! Cottage Grove is a tightknit community just south of Eugene with hopes and dreams of building a carousel on our Main Street. To raise funds, we will be hosting a full day of food and fun in our town on June 24th. We would love for you to come and be a part of this special moment!</td>
+
+		<td>Learn to paint like pro while sipping some pinot. Join us for our paint and sip fundraiser event on July 8th in Portland, OR. The proceeds will help continue to raise money for the Cottage Grove carousel, a fundamental piece of the Cottage Grove community.
+		Tickets are $40 per person, which includes a three-hour painting lesson, wine, and supplies.</td>
+
+		<td>Join the herd and enter our first ever Carousel Color Run on July 29th. Walk, trot, or gallop your way to the finish line – all ages are welcome! Entry is $10 per person, or $35 per four person team, and all proceeds will go toward our beautiful Cottage Grove carousel.</td>
+
+		<td>Red, white, and blue looks good on YOU. Come and get some cool Fourth of July gear in Cottage Grove! We’ll be selling swag of all sorts to support the revival of the Carousel on Main Street.</td>
+
+	</tr>
+	</table> 
+		
+		
+	</div>
+</body>
+</html>
