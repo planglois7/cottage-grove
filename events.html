@@ -1,116 +1,174 @@
 <! DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
-	<style type="text/css">
-	.main{
-		
-	}
-	body{
-	margin:0px;
-}
-#menu{
-	grid-column: 1;
-  grid-row: 1/8;
-  border-right:solid;
-  border-width:1px;
-  text-align:center;
-  padding-top:10%;
-/*background-color:rgb(251,252,221);*/
-}
-#main{
-	grid-column: 2 / 4;
-  grid-row: 1;
-  /*margin:10%;*/
-  margin-top:10%;
-  text-align:center;
-}
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <style type="text/css">
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+        body {
+            margin: 0px;
+        }
 
-  /*background-image: url('file:///Users/Rick/Documents/cottage%20grove/horse.jpg');*/
-}
-img{
-	width:50%;
-	padding:0px;
-}
-p{
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size:20px;
-}
-h1{
-	font-family: 'Alegreya Sans', sans-serif;
-}
-a{
-	text-decoration:none;
-	color:black;
-}
-a:hover {
-	text-decoration: underline;
-}
-table, th, td {
-    border: 1px solid black;
-    /*border-collapse: collapse;*/
-    font-family: 'Alegreya Sans', sans-serif;
-   padding:1%;
-}
-td{
-	padding:10px;
-}
-table{
-width:100%;
-}
-	</style>
+        #menu {
+            grid-column: 1;
+            grid-row: 1/8;
+            border-right: solid;
+            border-width: 1px;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        #main {
+            grid-column: 2 / 4;
+            grid-row: 1;
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        .card {
+            border-top: solid 1px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            display: inline-table;
+            font-family: 'Alegreya Sans', sans-serif;
+            margin-bottom: 20px;
+            transition: .3s;
+        }
+
+        #card-1:hover {
+            background-color: rgba(107,79,139, 0.6);
+            box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+        }
+
+        #card-2:hover {
+            background-color: rgba(250,173,81, 0.6);
+            box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+        }
+
+        #card-3:hover {
+            background-color: rgba(50,170,220, 0.6);
+            box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+        }
+
+        #card-4:hover {
+            background-color: rgba(56,178,115, 0.6);
+            box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        img {
+            width: 50%;
+            padding: 0px;
+        }
+
+        p {
+            font-family: 'Alegreya Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-family: 'Alegreya Sans', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            font-family: 'Alegreya Sans', sans-serif;
+            padding: 1%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
-	<div id="menu">
-	<a href="index.html"><img src="AHACarouselLogo-02.png"></img></a>
-	<a href="story.html"><p> Our Story </p></a>
-<!-- 	<a href="progress.html"><p> Progress </p></a> -->
-	<a href="contact.html"><p> Contact </p></a>
-	<a href="events.html"><p> Events </p></a>
-<!-- 	<a href="merch.html"><p> Merchandise </p></a><br> -->
-	<a href="https://www.gofundme.com/cottage-grove-carousel"><p style="font-size:25px"> Donate </p></a>
-	
-	</div>
-	<div class="main" id="main">
-	<h1>Upcoming Events!</h1>
-	<table>
-	<tr>
-		<th style="background-color:rgb(107,79,139)">June 24- Cottage Grove Carnival</th>
-		<th style="background-color:rgb(250,173,81)">July 29th- Carousel Color Run</th>
-		<th style="background-color:rgb(50,170,220)">July 8th- Sip and Paint</th>
-		<th style="background-color:rgb(56,178,115)">September 2nd- Summer Fundraising Drawings</th>
+    <div id="menu">
+        <a href="index.html"><img src="AHACarouselLogo-02.png"></img></a>
+        <a href="story.html"><p> Our Story </p></a>
+        <!-- 	<a href="progress.html"><p> Progress </p></a> -->
+        <a href="contact.PHP"><p> Contact </p></a>
+        <a href="events.html"><p> Events </p></a>
+        <!-- 	<a href="merch.html"><p> Merchandise </p></a><br> -->
+        <a href="https://www.gofundme.com/cottage-grove-carousel"><p style="font-size:25px"> Donate </p></a>
 
-	</tr>
-		
-	<tr>
-		<td>Come one, come all to our Carousel Kickoff Event! Cottage Grove is a tightknit community just south of Eugene with hopes and dreams of building a carousel on our Main Street. To raise funds, we will be hosting a full day of food and fun in our town on June 24th. We would love for you to come and be a part of this special moment!</td>
+    </div>
+    <div class="main" id="main">
+        <h1>Upcoming Events!</h1>
+        <div class="card" id="card-1">
+            <div class="container">
+                <h2>June 24- Cottage Grove Carnival</h2>
+                <p>Come one, come all to our Carousel Kickoff Event! Cottage Grove is a tightknit community just south
+                    of Eugene with hopes and dreams of building a carousel on our Main Street. To raise funds, we will
+                    be hosting a full day of food and fun in our town on June 24th. We would love for you to come and be
+                    a part of this special moment!</p>
+            </div>
+        </div>
 
-		<td>Learn to paint like pro while sipping some pinot. Join us for our paint and sip fundraiser event on July 8th in Portland, OR. The proceeds will help continue to raise money for the Cottage Grove carousel, a fundamental piece of the Cottage Grove community.
-		Tickets are $40 per person, which includes a three-hour painting lesson, wine, and supplies.</td>
+        <div class="card" id="card-2">
+            <div class="container">
+                <h2>July 29th- Carousel Color Run</h2>
+                <p>Learn to paint like pro while sipping some pinot. Join us for our paint and sip fundraiser event on
+                    July 8th in Portland, OR. The proceeds will help continue to raise money for the Cottage Grove
+                    carousel, a fundamental piece of the Cottage Grove community.
+                    Tickets are $40 per person, which includes a three-hour painting lesson, wine, and supplies.</p>
+                 </div>
+        </div>
 
-		<td>Join the herd and enter our first ever Carousel Color Run on July 29th. Walk, trot, or gallop your way to the finish line – all ages are welcome! Entry is $10 per person, or $35 per four person team, and all proceeds will go toward our beautiful Cottage Grove carousel.</td>
+        <div class="card" id="card-3">
+            <div class="container">
+                <h2>July 8th- Sip and Paint</h2>
+                <p>Join the herd and enter our first ever Carousel Color Run on July 29th. Walk, trot, or gallop your
+                    way to the finish line – all ages are welcome! Entry is $10 per person, or $35 per four person team,
+                    and all proceeds will go toward our beautiful Cottage Grove carousel.</p>
+                 </div>
+        </div>
 
-		<td>To support our efforts to renovate and create a home for our vintage carousel, members of the Friends of the Cottage Grove Carousel have donated these items for three separate drawings. The drawings will be done live on KNND Radio 1400-AM at 10 am on Saturday, September 2. Winners will be announced on the air and notified by phone to determine how they wish to pick up their prize.<br><em>Tickets are $5 each. To enter the drawing call Cindy at 541.915.0113 to arrange for payment no later than Friday, Sept. 1 at Noon.</em></td>
-	</tr>
-	</table> 
-		<img style="display: inline-block; height:400px; width:300px;" src="horse.jpg" alt="">
-		<p><strong>Wooden Carousel Rocking Horse (designed for ages 3-10)</strong></p>
-		<p>Donated by Alice Nowicki and Ken Schwieger.  ($189.00 value).</p>
-		<img style="display: inline-block; height:400px; width:300px;" src="quilt.jpg" alt="">
-		<p><strong>Handmade Quilt: "Spinning Spools" pattern made from old dresses by Berta Jarrard in 1993</strong></p>
-		<p>Donated by Theresa and Russ McGuire. ($400.00 value)</p>
-		<img style="display: inline-block; height:400px; width:300px;" src="unnamed.jpg" alt="">
-		<p><strong>San Francisco Carousel Music Box inside glass display case</strong></p>
-		<p>Donated by Alice Nowicki and Ken Schwieger. ($130.00 value)</p>
-		
-	</div>
+        <div class="card" id="card-4">
+            <div class="container">
+                <h2>September 2nd- Summer Fundraising Drawings</h2>
+                <p>To support our efforts to renovate and create a home for our vintage carousel, members of the
+                    Friends of the Cottage Grove Carousel have donated these items for three separate drawings. The
+                    drawings will be done live on KNND Radio 1400-AM at 10 am on Saturday, September 2. Winners will be
+                    announced on the air and notified by phone to determine how they wish to pick up their
+                    prize.<br><em>Tickets are $5 each. To enter the drawing call Cindy at 541.915.0113 to arrange for
+                        payment no later than Friday, Sept. 1 at Noon. (See Items Below)</em></p>
+                 </div>
+        </div>
+       
+        <img style="display: inline-block; height:400px; width:300px;" src="horse.jpg" alt="">
+        <p><strong>Wooden Carousel Rocking Horse (designed for ages 3-10)</strong></p>
+        <p>Donated by Alice Nowicki and Ken Schwieger. ($189.00 value).</p>
+        <img style="display: inline-block; height:400px; width:300px;" src="quilt.jpg" alt="">
+        <p><strong>Handmade Quilt: "Spinning Spools" pattern made from old dresses by Berta Jarrard in 1993</strong></p>
+        <p>Donated by Theresa and Russ McGuire. ($400.00 value)</p>
+        <img style="display: inline-block; height:400px; width:300px;" src="unnamed.jpg" alt="">
+        <p><strong>San Francisco Carousel Music Box inside glass display case</strong></p>
+        <p>Donated by Alice Nowicki and Ken Schwieger. ($130.00 value)</p>
+
+    </div>
+</div>
 </body>
 </html>
