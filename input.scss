@@ -1,0 +1,261 @@
+@import "neat";
+@import "grid";
+
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+
+  .container {
+    @include container();
+
+    .menu {
+      display: none;
+      font-size: 30px;
+
+      @include grid-media($grid-media--landscape) {
+        @include layout(2, 2, 3, 3);
+        border-right: solid;
+        border-width: 1px;
+        height: 100%;
+        font-size: 20px;
+        display: inline-block;
+        margin: auto;
+        position: fixed;
+        text-align: center;
+        padding-top: 50px;
+      }
+
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      float: left;
+
+      @include grid-media($grid-media--landscape) {
+        display: none;
+      }
+
+      .dropbtn {
+        background-color: rgba(243, 30, 121, 0.6);
+        color: white;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 160px;
+      }
+
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: rgba(243, 30, 121, 0.6);
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 100px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1
+      }
+
+      .show {
+        display: block;
+        width: 100px;
+      }
+    }
+
+    .main {
+      @include layout(4, 4, 9, 9);
+      @include shift(0, 0, 2, 2);
+      margin: auto;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .main-image {
+      height: 91px;
+      width: 120px;
+    }
+
+    .story {
+      @include layout(4, 6, 8, 8);
+      @include shift(0, 0, 2, 3);
+    }
+
+    .card {
+      border-top: solid 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      font-family: 'Alegreya Sans', sans-serif;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: .3s;
+      max-width: 500px;
+    }
+
+    #card-1:hover {
+      background-color: rgba(107, 79, 139, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    #card-2:hover {
+      background-color: rgba(250, 173, 81, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    #card-3:hover {
+      background-color: rgba(50, 170, 220, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    #card-4:hover {
+      background-color: rgba(56, 178, 115, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-text {
+      padding: 2px 16px;
+    }
+
+    img {
+      max-width: 600px;
+      padding: 0px;
+    }
+
+    p {
+      font-family: 'Alegreya Sans', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Alegreya Sans', sans-serif;
+    }
+
+    .main-info {
+      @include layout(4,6,10,10);
+      @include shift(0, 0, 3,3);
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      font-family: 'Alegreya Sans', sans-serif;
+      padding: 1%;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    input[type=submit] {
+      padding: 10px 20px;
+      margin-top: 8px;
+      margin-right: 10px;
+      border: none;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 20px;
+      background-color: #ccc;
+      outline: none;
+      cursor: pointer;
+    }
+
+    input[type=reset] {
+      padding: 10px 20px;
+      margin-top: 8px;
+      margin-right: 10px;
+      border: none;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 20px;
+      background-color: #ccc;
+      outline: none;
+      cursor: pointer;
+    }
+
+    input[type=text] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+
+      @include grid-media($grid-media--landscape) {
+        width: 50%;
+      }
+    }
+
+    input[type=text]:focus {
+      border: 3px solid #555;
+    }
+    textarea {
+      resize: none;
+      outline: none;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+
+      @include grid-media($grid-media--landscape) {
+        width: 50%;
+      }
+    }
+
+    textarea:focus {
+      border: 3px solid #555;
+    }
+
+    label {
+      font-family: 'Alegreya Sans', sans-serif;
+    }
+
+    form {
+      font-family: 'Alegreya Sans', sans-serif;
+    }
+
+    video {
+      @include layout(4,6,10,10);
+      @include shift(0, 0, 3,3);
+      margin-top: 50px;
+    }
+
+  }
+}

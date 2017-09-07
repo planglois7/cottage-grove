@@ -1,0 +1,351 @@
+.no-grid {
+  background-image: none !important; }
+
+body {
+  margin: 0;
+  font-family: 'Alegreya Sans', sans-serif; }
+  body .container {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; }
+    body .container::after {
+      content: '';
+      clear: both;
+      display: table; }
+    @media only screen and (min-width: 0px) {
+      body .container {
+        max-width: 640px; } }
+    @media only screen and (min-width: 640px) {
+      body .container {
+        max-width: 800px; } }
+    @media only screen and (min-width: 800px) {
+      body .container {
+        max-width: 1180px; } }
+    @media only screen and (min-width: 1180px) {
+      body .container {
+        max-width: 1220px; } }
+    body .container .menu {
+      display: none;
+      font-size: 30px; }
+      @media only screen and (min-width: 800px) {
+        body .container .menu {
+          border-right: solid;
+          border-width: 1px;
+          height: 100%;
+          font-size: 20px;
+          display: inline-block;
+          margin: auto;
+          position: fixed;
+          text-align: center;
+          padding-top: 50px; } }
+  @media only screen and (min-width: 800px) and (min-width: 0px) {
+    body .container .menu {
+      width: calc(50% - 24px);
+      float: left;
+      margin-left: 16px; } }
+  @media only screen and (min-width: 800px) and (min-width: 640px) {
+    body .container .menu {
+      width: calc(33.33333% - 21.33333px);
+      float: left;
+      margin-left: 16px; } }
+  @media only screen and (min-width: 800px) and (min-width: 800px) {
+    body .container .menu {
+      width: calc(25% - 20px);
+      float: left;
+      margin-left: 16px; } }
+  @media only screen and (min-width: 800px) and (min-width: 1180px) {
+    body .container .menu {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px; } }
+
+    body .container .dropdown {
+      position: relative;
+      display: inline-block;
+      float: left; }
+      @media only screen and (min-width: 800px) {
+        body .container .dropdown {
+          display: none; } }
+      body .container .dropdown .dropbtn {
+        background-color: rgba(243, 30, 121, 0.6);
+        color: white;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 160px; }
+      body .container .dropdown .dropbtn:hover, body .container .dropdown .dropbtn:focus {
+        background-color: rgba(243, 30, 121, 0.6); }
+      body .container .dropdown .dropdown-content {
+        display: none;
+        position: absolute;
+        text-align: center;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 100px;
+        z-index: 1; }
+      body .container .dropdown .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block; }
+      body .container .dropdown .dropdown-content a:hover {
+        background-color: #f1f1f1; }
+      body .container .dropdown .show {
+        display: block;
+        width: 100px; }
+    body .container .main {
+      margin: auto;
+      display: inline-block;
+      text-align: center; }
+      @media only screen and (min-width: 0px) {
+        body .container .main {
+          width: calc(100% - 32px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 640px) {
+        body .container .main {
+          width: calc(66.66667% - 26.66667px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 800px) {
+        body .container .main {
+          width: calc(75% - 28px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 1180px) {
+        body .container .main {
+          width: calc(75% - 35px);
+          float: left;
+          margin-left: 20px; } }
+      @media only screen and (min-width: 0px) {
+        body .container .main {
+          left: calc(0% - 16px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 640px) {
+        body .container .main {
+          left: calc(0% - 16px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 800px) {
+        body .container .main {
+          left: calc(16.66667% - 18.66667px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 1180px) {
+        body .container .main {
+          left: calc(16.66667% - 23.33333px + 20px);
+          position: relative; } }
+    body .container .main-image {
+      height: 91px;
+      width: 120px; }
+    @media only screen and (min-width: 0px) {
+      body .container .story {
+        width: calc(100% - 32px);
+        float: left;
+        margin-left: 16px; } }
+    @media only screen and (min-width: 640px) {
+      body .container .story {
+        width: calc(100% - 32px);
+        float: left;
+        margin-left: 16px; } }
+    @media only screen and (min-width: 800px) {
+      body .container .story {
+        width: calc(66.66667% - 26.66667px);
+        float: left;
+        margin-left: 16px; } }
+    @media only screen and (min-width: 1180px) {
+      body .container .story {
+        width: calc(66.66667% - 33.33333px);
+        float: left;
+        margin-left: 20px; } }
+    @media only screen and (min-width: 0px) {
+      body .container .story {
+        left: calc(0% - 16px + 16px);
+        position: relative; } }
+    @media only screen and (min-width: 640px) {
+      body .container .story {
+        left: calc(0% - 16px + 16px);
+        position: relative; } }
+    @media only screen and (min-width: 800px) {
+      body .container .story {
+        left: calc(16.66667% - 18.66667px + 16px);
+        position: relative; } }
+    @media only screen and (min-width: 1180px) {
+      body .container .story {
+        left: calc(25% - 25px + 20px);
+        position: relative; } }
+    body .container .card {
+      border-top: solid 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      font-family: 'Alegreya Sans', sans-serif;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: .3s;
+      max-width: 500px; }
+    body .container #card-1:hover {
+      background-color: rgba(107, 79, 139, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2); }
+    body .container #card-2:hover {
+      background-color: rgba(250, 173, 81, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2); }
+    body .container #card-3:hover {
+      background-color: rgba(50, 170, 220, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2); }
+    body .container #card-4:hover {
+      background-color: rgba(56, 178, 115, 0.6);
+      box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2); }
+    body .container .card-text {
+      padding: 2px 16px; }
+    body .container img {
+      max-width: 600px;
+      padding: 0px; }
+    body .container p {
+      font-family: 'Alegreya Sans', sans-serif; }
+    body .container h1 {
+      font-family: 'Alegreya Sans', sans-serif; }
+    body .container .main-info {
+      display: inline-block; }
+      @media only screen and (min-width: 0px) {
+        body .container .main-info {
+          width: calc(100% - 32px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 640px) {
+        body .container .main-info {
+          width: calc(100% - 32px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 800px) {
+        body .container .main-info {
+          width: calc(83.33333% - 29.33333px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 1180px) {
+        body .container .main-info {
+          width: calc(83.33333% - 36.66667px);
+          float: left;
+          margin-left: 20px; } }
+      @media only screen and (min-width: 0px) {
+        body .container .main-info {
+          left: calc(0% - 16px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 640px) {
+        body .container .main-info {
+          left: calc(0% - 16px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 800px) {
+        body .container .main-info {
+          left: calc(25% - 20px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 1180px) {
+        body .container .main-info {
+          left: calc(25% - 25px + 20px);
+          position: relative; } }
+    body .container a {
+      text-decoration: none;
+      color: black; }
+    body .container a:hover {
+      text-decoration: underline; }
+    body .container table, body .container th, body .container td {
+      border: 1px solid black;
+      font-family: 'Alegreya Sans', sans-serif;
+      padding: 1%; }
+    body .container td {
+      padding: 10px; }
+    body .container table {
+      width: 100%; }
+    body .container input[type=submit] {
+      padding: 10px 20px;
+      margin-top: 8px;
+      margin-right: 10px;
+      border: none;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 20px;
+      background-color: #ccc;
+      outline: none;
+      cursor: pointer; }
+    body .container input[type=reset] {
+      padding: 10px 20px;
+      margin-top: 8px;
+      margin-right: 10px;
+      border: none;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 20px;
+      background-color: #ccc;
+      outline: none;
+      cursor: pointer; }
+    body .container input[type=text] {
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none; }
+      @media only screen and (min-width: 800px) {
+        body .container input[type=text] {
+          width: 50%; } }
+    body .container input[type=text]:focus {
+      border: 3px solid #555; }
+    body .container textarea {
+      resize: none;
+      outline: none;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #ccc;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      @media only screen and (min-width: 800px) {
+        body .container textarea {
+          width: 50%; } }
+    body .container textarea:focus {
+      border: 3px solid #555; }
+    body .container label {
+      font-family: 'Alegreya Sans', sans-serif; }
+    body .container form {
+      font-family: 'Alegreya Sans', sans-serif; }
+    body .container video {
+      margin-top: 50px; }
+      @media only screen and (min-width: 0px) {
+        body .container video {
+          width: calc(100% - 32px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 640px) {
+        body .container video {
+          width: calc(100% - 32px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 800px) {
+        body .container video {
+          width: calc(83.33333% - 29.33333px);
+          float: left;
+          margin-left: 16px; } }
+      @media only screen and (min-width: 1180px) {
+        body .container video {
+          width: calc(83.33333% - 36.66667px);
+          float: left;
+          margin-left: 20px; } }
+      @media only screen and (min-width: 0px) {
+        body .container video {
+          left: calc(0% - 16px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 640px) {
+        body .container video {
+          left: calc(0% - 16px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 800px) {
+        body .container video {
+          left: calc(25% - 20px + 16px);
+          position: relative; } }
+      @media only screen and (min-width: 1180px) {
+        body .container video {
+          left: calc(25% - 25px + 20px);
+          position: relative; } }
+
+/*# sourceMappingURL=output.css.map */
