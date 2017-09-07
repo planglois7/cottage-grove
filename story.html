@@ -1,88 +1,62 @@
-<! DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
-	<style>
-	
-	body{
-	/*background-color:rgb(251,252,221);*/
-	
-	}
-	
-	body{
-	margin:0px;
-}
-#menu{
-	grid-column: 1;
-  grid-row: 1/4;
-  border-right:solid;
-  border-width:1px;
-  text-align:center;
-  padding-top:10%;
-/*background-color:rgb(251,252,221);*/
-}
-#main{
-	grid-column: 2 / 4;
-  grid-row: 1;
-  margin:20%;
-  margin-top:10%;
-  text-align:center;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  /*background-image: url('file:///Users/Rick/Documents/cottage%20grove/horse.jpg');*/
-}
-img{
-	width:50%;
-	padding:0px;
-}
-p{
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size:20px;
-}
-h1{font-family: 'Alegreya Sans', sans-serif;
-}
-a{
-	text-decoration:none;
-	color:black;
-}
-a:hover {
-	text-decoration: underline;
-}
-	</style>
 </head>
 <body>
-<div class="wrapper">
-	<div id="menu">
-	<a href="index.html"> <img src="AHACarouselLogo-02.png"></img></a>
-	<a href="story.html"><p> Our Story </p></a>
-	
-<!-- 	<a href="progress.html"><p> Progress </p></a> -->
-	<a href="contact.html"><p> Contact </p></a>
-	<a href="events.html"><p> Events </p></a>
-<!-- 	<a href="merch.html"><p> Merchandise </p></a><br> -->
-	<a href="https://www.gofundme.com/cottage-grove-carousel"><p style="font-size:25px"> Donate </p></a>
-	
-	</div>
-	<div class="main" id="main">
-		
-		<h1>Our Story</h1>
-	<p>30 unique animals found their way to Cottage Grove in the mid-90s. 
-Individually shipped from Virginia, they traveled 2000 miles west with one goal in mind: bring people together.</p>
+<div class="container">
+    <div class="menu">
+        <a href="index.html"> <img class="main-image" src="AHACarouselLogo-02.png"></a>
+        <a href="story.html"><p> Our Story </p></a>
 
-<p>After successfully relocating, numerous complications have made it difficult for this gorgeous carousel to shine from the barn it's been stored in for more than 20 years.</p>
+        <!-- 	<a href="progress.html"><p> Progress </p></a> -->
+        <a href="contact.html"><p> Contact </p></a>
+        <a href="events.html"><p> Events </p></a>
+        <!-- 	<a href="merch.html"><p> Merchandise </p></a><br> -->
+        <a href="https://www.gofundme.com/cottage-grove-carousel"><p> Donate </p></a>
 
-<p>We need your help to reignite the light.</p>
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="story.html">Our Story</a>
+            <!--<a href="progress.html">Progress</a>-->
+            <a href="events.html">Events</a>
+            <!--<a href="merch.html">Merchandise</a>-->
+            <a href="contact.html">Contact</a>
+            <a href="https://www.gofundme.com/cottage-grove-carousel"><p>Donate</p></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="story">
 
-<p>This carousel will be a catalyst for coming together; a gathering spot for all walks of life to enjoy the magic of the present moment. Community-minded volunteers and businesses are now donating time and materials to refurbish the animals and the mechanism.</p>
-		<p>We need your financial support now to create a home for it once the restoration work is completed to bring it back to life for the enjoyment of generations to come.</p>
+            <h1>Our Story</h1>
+            <p>30 unique animals found their way to Cottage Grove in the mid-90s.
+                Individually shipped from Virginia, they traveled 2000 miles west with one goal in mind: bring people
+                together.</p>
 
-<p>By supporting the Cottage Grove Carousel, your name will be carved in our town&#39;s history.</p>
-	</div>
+            <p>After successfully relocating, numerous complications have made it difficult for this gorgeous carousel
+                to
+                shine from the barn it's been stored in for more than 20 years.</p>
 
+            <p>We need your help to reignite the light.</p>
+
+            <p>This carousel will be a catalyst for coming together; a gathering spot for all walks of life to enjoy the
+                magic of the present moment. Community-minded volunteers and businesses are now donating time and
+                materials
+                to refurbish the animals and the mechanism.</p>
+            <p>We need your financial support now to create a home for it once the restoration work is completed to
+                bring it
+                back to life for the enjoyment of generations to come.</p>
+
+            <p>By supporting the Cottage Grove Carousel, your name will be carved in our town&#39;s history.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
