@@ -1,185 +1,68 @@
-<! DOCTYPE html>
 <html>
 <head>
-	
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
-	<style type="text/css">
-	.main{
-		width: 1000px; height:1000px;
-	}
-	body{
-	margin:0px;
-}
-#menu{
-	grid-column: 1;
-  grid-row: 1/2;
-  border-right:solid;
-  border-width:1px;
-  text-align:center;
-  padding-top:10%;
-/*background-color:rgb(251,252,221);*/
-}
-#main{
-	grid-column: 2 / 4;
-  grid-row: 1;
-  margin:0px;
-  /*text-align:;*/
-  padding-top:10%;
-  padding-left:10%;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-
-}
-img{
-	width:50%;
-	padding:0px;
-}
-p{
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size:20px;
-}
-h1{font-family: 'Alegreya Sans', sans-serif;
-}
-a{
-	text-decoration:none;
-	color:black;
-}
-a:hover {
-	text-decoration: underline;
-}
-input[type=submit] {
-	padding: 10px 20px;
-	margin-top: 8px;
-	margin-right: 10px;
-	border: none;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 20px; 
-	background-color: #ccc;
-	outline: none;
-	cursor: pointer; 
-}
-		
-input[type=reset] {
-	padding: 10px 20px;
-	margin-top: 8px;
-	margin-right: 10px;
-	border: none;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 20px; 
-	background-color: #ccc;
-	outline: none;
-	cursor: pointer; 
-}
-		
-input[type=text] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-
-input[type=text]:focus {
-    border: 3px solid #555;
-}
-input[type=email] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-}
-
-input[type=email]:focus {
-    border: 3px solid #555;
-}
-textarea{
-  resize:none;
-  outline:none;
-  width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-textarea:focus{
-  border: 3px solid #555;
-}
-.button5 {
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.button5:hover {
-    background-color: #555555;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-}
-label{
-	font-family: 'Alegreya Sans', sans-serif;}
-form {
-	font-family: 'Alegreya Sans', sans-serif;}
-
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
 
 </head>
 <body>
-<div class="wrapper">
-	<div id="menu">
-	<a href="index.html"> <img src="AHACarouselLogo-02.png"></img></a>
-	<a href="story.html"><p> Our Story </p></a>
-	
-<!-- 	<a href="progress.html"><p> Progress </p></a> -->
-	<a href="contact.html"><p> Contact </p></a>
-	<a href="events.html"><p> Events </p></a>
-<!-- 	<a href="merch.html"><p> Merchandise </p></a><br> -->
-	<a href="https://www.gofundme.com/cottage-grove-carousel"><p style="font-size:25px"> Donate </p></a>
-	
-	</div>
-	<div class="main" id="main">
-		
-		<h1>Contact Us</h1>
-		<p></p>
-		
-		<div class="vw-page-wrapper clearfix">
-      <div class="container">
-          <div class="row">       
-              <div class="vw-page-content col-md-8" role="main">
-		      
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc1mbimR6kym9dLfSq0qHfyJFsmEaDnaQFwpCTan4n4wKXLvA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-		 
-		 <p>Name</p> <input type="text" name="entry.1725990227" id="entry.1725990227">
-		 <p>Email</p> <input type="text" name="entry.1609838657" id="entry.1609838657">
-		 <p>Message</p><textarea name="entry.1949565742" id="entry.1949565742" rows="6" cols="25"></textarea><br />
-		 <input type="submit" value="Send"><input type="reset" value="Clear">
-                 
-                    
-                </form>
-		      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-		      </script>
+<div class="container">
+    <div class="menu">
+        <a href="index.html"> <img class="main-image" src="AHACarouselLogo-02.png"></a>
+        <a href="story.html"><p> Our Story </p></a>
+        <!-- 	<a href="progress.html"><p> Progress </p></a> -->
+        <a href="events.html"><p> Events </p></a>
+        <!-- 	<a href="merch.html"><p> Merchandise </p></a><br> -->
+         <a href="contact.html"><p> Contact </p></a>
+        <a href="https://www.gofundme.com/cottage-grove-carousel"><p> Donate </p></a>
+
     </div>
-	</div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+           <a href="index.html">Home</a>
+            <a href="story.html">Our Story</a>
+            <!--<a href="progress.html">Progress</a>-->
+            <a href="events.html">Events</a>
+            <!--<a href="merch.html">Merchandise</a>-->
+            <a href="contact.html">Contact</a>
+            <a href="https://www.gofundme.com/cottage-grove-carousel"><p>Donate</p></a>
+        </div>
+    </div>
+    <div class="main">
+
+        <h1>Contact Us</h1>
+        <p></p>
+
+
+        <form name="gform" id="gform" enctype="text/plain"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSc1mbimR6kym9dLfSq0qHfyJFsmEaDnaQFwpCTan4n4wKXLvA/formResponse?"
+              target="hidden_iframe" onsubmit="submitted=true;">
+
+            <p>Name</p> <input type="text" name="entry.1725990227" id="entry.1725990227">
+            <p>Email</p> <input type="text" name="entry.1609838657" id="entry.1609838657">
+            <p>Message</p><textarea name="entry.1949565742" id="entry.1949565742" rows="6"
+                                    cols="25"></textarea><br/>
+            <input type="submit" value="Send"><input type="reset" value="Clear">
+
+
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                onload="if(submitted) {}"></iframe>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+                type="text/javascript"></script>
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <script type="text/javascript">
+            $('#gform').on('submit', function (e) {
+                $('#gform *').fadeOut(2000);
+                $('#gform').prepend('Your submission has been processed...');
+            });
+        </script>
+    </div>
+</div>
 </body>
 </html>
