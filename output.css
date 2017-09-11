@@ -301,7 +301,7 @@ width: 80%; }
       border: 3px solid #ccc;
       -webkit-transition: 0.5s;
       transition: 0.5s;
-wifth: 80%;}
+width: 80%;}
       @media only screen and (min-width: 800px) {
         body .container textarea {
           width: 50%; } }
